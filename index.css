@@ -113,22 +113,18 @@ margin-bottom: 25px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #10B981;
+    background-color: #10B981;
     cursor: pointer;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
-label {
-   position: relative; 
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 28px;
-   /* identical to box height, or 140% */
-   color: #6B7280;
-   left: 52px;
-   width: 170px;
+
+.slider::-ms-fill-lower{
+    background-color: #10B981;
 }
+.slider::-moz-range-progress {
+    background: #d3d3d3d3;
+}
+
 
 #passwordLength {
     position: relative;
@@ -138,7 +134,7 @@ label {
     font-size: 12px;
     line-height: 16px;
    /* identical to box height, or 140% */
-    color: #6B7280; 
+    
     margin: 0;
 }
 /* Toggle button */
