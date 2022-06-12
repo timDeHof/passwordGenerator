@@ -191,7 +191,7 @@ margin-bottom: 25px;
     -o-transition: ease .3s;
 }
 /* Button */
-button {
+#btn {
 /* Auto layout */
 display: flex;
 flex-direction: row;

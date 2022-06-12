@@ -94,9 +94,12 @@ let characters = [
 let passwords = [];
 let passwordLengthInput = document.getElementById("passwordLength");
 let password1EL = document.getElementById("password1");
+
 let password2EL = document.getElementById("password2");
 let password3EL = document.getElementById("password3");
 let password4EL = document.getElementById("password4");
+let generatePasswordBtn = document.getElementById("btn");
+
 let lengthValue = document.getElementById("length");
 lengthValue.textContent = passwordLengthInput.value;
 // updates the length value with the slider
@@ -145,3 +148,5 @@ function generatePasswords() {
   password3EL.textContent = passwords[2];
   password4EL.textContent = passwords[3];
 }
+
+function copyPassword() {}

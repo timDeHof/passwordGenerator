@@ -23,7 +23,7 @@ index.html
       <h3 id="supporting-text">Never use an insecure password again.</h3>
       <div id="settings-container">
         <div id="password-length">
-          <h3>Password length: <span id="length"></span></h3>
+          <h3>Password length: <span id="length"></h3>
           <input
             type="range"
             id="passwordLength"
@@ -43,12 +43,12 @@ index.html
         </div>
       </div>
 
-      <button onclick="generatePasswords()">
+      <button id="btn" onclick="generatePasswords()">
         <h4 id="button-text">Generate passwords</h4>
       </button>
       <hr />
       <div class="passwords-container">
-        <div id="password1"></div>
+        <div id="password1" onclick="copyPassword()"></div>
         <div id="password2"></div>
         <div id="password3"></div>
         <div id="password4"></div>
