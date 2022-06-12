@@ -1,0 +1,88 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="heading1">Generate a</h1>
+      <h1 id="heading2">random password</h1>
+      <h3 id="supporting-text">Never use an insecure password again.</h3>
+      <div id="password-container">
+          <div id="password-length">
+            <label for="password_length">Password length:</label>
+            <input
+            type="range"
+            id="passwordlength"
+            name="password_length"
+            min="1"
+            max="18"
+            value = "14"
+            />
+        
+        </div>
+        <div class="setting">   
+            <div class="toggle-wrapper">
+                <h3 id="supporting-text">Include Uppercase</h3>
+                <input type="checkbox" id="uppercase" checked />
+                <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                </div>
+            </div>  
+        </div>
+         
+        <div class="setting">
+            <div class="toggle-wrapper">
+                <h3 id="supporting-text">Include Lowercase</h3>
+                <input type="checkbox" id="lowercase" checked />
+                <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="setting">
+            <div class="toggle-wrapper">
+                <h3 id="supporting-text">Include Numbers</h3>
+                <input type="checkbox" id="number" checked />
+                <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="setting">
+            <div class="toggle-wrapper">
+                <h3 id="supporting-text">Include Symbols</h3>
+                <input type="checkbox" id="symbol" />
+                <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                </div>
+            </div>      
+        </div>    
+      </div>
+      
+      <button onclick="generatePasswords()">
+        <h4 id="button-text">Generate passwords</h4>
+      </button>
+      <hr />
+      <div class="password-container">
+        <div id="password1"></div>
+        <div id="password2"></div>
+        <div id="password3"></div>
+        <div id="password4"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
