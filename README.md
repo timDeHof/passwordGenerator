@@ -1,4 +1,4 @@
-# title(){return this.options.title||this.options.name}
+# Password Generator solo project
 
 ## Supporting Scrimba
 
