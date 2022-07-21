@@ -2,6 +2,8 @@
 
 A solo Project for the purpose of demoing what I learned Scrimba's Front-End Development path.
 
+[Live Demo](https://timdehof.github.io/passwordGenerator/)
+
 ## goals of this project
 
 - [x] Build it from "scratch"
