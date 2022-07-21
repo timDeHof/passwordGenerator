@@ -1,5 +1,7 @@
 # Password Generator
 
+=======
+
 ## goals of this project
 
 - [x] Build it from "scratch"
