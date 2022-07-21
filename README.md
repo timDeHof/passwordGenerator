@@ -1,6 +1,6 @@
 # Password Generator
 
-=======
+A solo Project for the purpose of demoing what I learned Scrimba's Front-End Development path.
 
 ## goals of this project
 
