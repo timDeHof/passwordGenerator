@@ -1,16 +1,14 @@
-# title(){return this.options.title||this.options.name}
+# Password Generator
 
-## Supporting Scrimba
+## goals of this project
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
+- [x] Build it from "scratch"
+- [x] Generate a set of random passwords when the user clicks the button
+- [x] Each password should be 15 characters long
+- [x] Each password should be a random string of letters, numbers, and special characters
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
+## Stretch goals
 
-	It would also mean the world to us if you share the courses.  
-
-Happy Coding!
+- [x] Ability to change the length of the passwords
+- [ ] Add "copy to clipboard" button
+- [x] Toggle "symbols" and "numbers" on/off
