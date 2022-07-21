@@ -149,5 +149,3 @@ function generatePasswords() {
   password3EL.textContent = passwords[2];
   password4EL.textContent = passwords[3];
 }
-
-function copyPassword() {}
