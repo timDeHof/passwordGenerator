@@ -93,8 +93,8 @@ let characters = [
 ];
 
 let passwordLengthInput = document.getElementById('passwordLength');
+const passwordContainer = document.getElementById('passwordContainer');
 let password1EL = document.getElementById('password1');
-
 let password2EL = document.getElementById('password2');
 let password3EL = document.getElementById('password3');
 let password4EL = document.getElementById('password4');
@@ -144,8 +144,25 @@ function generatePasswords() {
     let passwordElement = createPassword();
     passwords.push(passwordElement);
   }
+  
   password1EL.textContent = passwords[0];
   password2EL.textContent = passwords[1];
   password3EL.textContent = passwords[2];
   password4EL.textContent = passwords[3];
+}
+
+password1EL.addEventListener('click',  copyText);
+password2EL.addEventListener('click', copyText);
+password3EL.addEventListener('click',  copyText);
+password4EL.addEventListener('click',  copyText);
+
+async function copyText() {
+  let text = this.innerHTML;
+  await navigator.clipboard.writeText(text)
+            if(text) {
+              alert(`Text (${text}) copied to clipboard`);
+            } else 
+           {
+              alert('Error in copying text: ');
+            };
 }
