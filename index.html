@@ -7,7 +7,7 @@
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densityDpi=device-dpi">
     <meta name="description" content="Generate a random password. Never use an insecure password again.">
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="index.css" />
@@ -20,10 +20,10 @@
     <div id="container">
       <h1 id="heading1">Generate a</h1>
       <h1 id="heading2">random password</h1>
-      <h3 id="supporting-text">Never use an insecure password again.</h3>
+      <h2 id="supporting-text">Never use an insecure password again.</h2>
       <div id="settings-container">
         <div id="password-length">
-          <h3>Password length: <span id="length"></h3>
+          <label for="passwordLength">Password length: <span id="length"></label>
           <input
             type="range"
             id="passwordLength"
@@ -34,17 +34,17 @@
           />
         </div>
         <div class="toggle-wrapper">
-          <h3>Include Numbers</h3>
+          <label for="number">Include Numbers</label>
           <input type="checkbox" id="number" class="cm-toggle" checked />
         </div>
         <div class="toggle-wrapper">
-          <h3>Include Symbols</h3>
+          <label for="symbol">Include Symbols</label>
           <input type="checkbox" id="symbol" class="cm-toggle" checked />
         </div>
       </div>
 
       <button id="btn" onclick="generatePasswords()">
-        <h4 id="button-text">Generate passwords</h4>
+        <p id="button-text">Generate passwords</p>
       </button>
       <hr />
       <div class="passwords-container">
