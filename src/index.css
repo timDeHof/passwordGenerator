@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --green: #10b981;
+  --downy: #ecfdf5;
+  --light-gray: #d3d3d3d3;
+}
+/* Container */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: var(--downy);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* Headings */
+#heading1,
+#heading2 {
+  font-family: "Karla";
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  height: 1rem;
+}
+
+#heading1 {
+  margin-top: 10px;
+}
+
+#heading2 {
+  color: var(--green);
+}
+
+/* Supporting text */
+#supporting-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #6b7280;
+  width: 372px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#settings-container {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#password-length label,
+.toggle-wrapper label {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #6b7280;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  border-radius: 18px;
+  background-color: var(--light-gray);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* slider handle */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--green);
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--green);
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.slider::-ms-fill-lower {
+  background-color: var(--green);
+}
+.slider::-moz-range-progress {
+  background: var(--light-gray);
+}
+
+#passwordLength {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 140% */
+
+  margin: 0;
+}
+/* Toggle button */
+.cm-toggle {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 10px;
+  margin-right: 0px;
+}
+/* To create surface of toggle button */
+.cm-toggle:after {
+  content: "";
+  width: 32px;
+  height: 16px;
+  display: inline-block;
+  background-color: rgba(196, 195, 195, 0.55);
+  border-radius: 18px;
+  clear: both;
+}
+/* Contents before checkbox to create toggle handle */
+.cm-toggle:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: 0;
+
+  border-radius: 50%;
+  background: rgba(196, 195, 195, 0.55);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Shift the handle to left on check event */
+.cm-toggle:checked:before {
+  left: 16px;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Background color when toggle button will be active */
+.cm-toggle:checked:after {
+  background: var(--green);
+}
+
+/* Transition to smoothness */
+.cm-toggle,
+.cm-toggle:before,
+.cm-toggle:after,
+.cm-toggle:checked:before,
+.cm-toggle:checked:after {
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+/* Button */
+#btn {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px 9px 15px;
+  gap: 12px;
+
+  width: 223px;
+  height: 42px;
+  left: 52px;
+  background: var(--green);
+  /* shadow/sm */
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--downy);
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: var(--downy);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+#password-length {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+hr {
+  width: 446px;
+  border: 1px solid #d5d4d8;
+  margin-bottom: 20px;
+}
+.passwords-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 24px;
+  color: #10b981;
+}
+#generatedPassword {
+  background: #273549;
+  border-radius: 6px;
+  width: 210px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  #container {
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  #heading1,
+  #heading2 {
+    font-size: 32px;
+  }
+
+  #supporting-text {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #settings-container {
+    flex-direction: column;
+    margin-top: 2.5rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .toggle-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #btn {
+    width: 80%;
+    left: 0;
+    margin: 20px auto;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .passwords-container {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+}
+
+/* mobile screens */
+@media (max-width: 480px) {
+  #heading1,
+  #heading2 {
+    font-size: 28px;
+  }
+
+  #supporting-text {
+    font-size: 16px;
+  }
+
+  #btn {
+    width: 100%;
+  }
+
+  .passwords-container {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+}
