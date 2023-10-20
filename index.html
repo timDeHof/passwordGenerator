@@ -1,60 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densityDpi=device-dpi">
-    <meta name="description" content="Generate a random password. Never use an insecure password again.">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a random password. Never use an insecure password again." />
     <title>Random Password Generator</title>
-    <link rel="stylesheet" href="index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
   <body>
-    <div id="container">
-      <h1 id="heading1">Generate a</h1>
-      <h1 id="heading2">random password</h1>
-      <h2 id="supporting-text">Never use an insecure password again.</h2>
-      <div id="settings-container">
-        <div id="password-length">
-          <label for="passwordLength">Password length: <span id="length"></label>
-          <input
-            type="range"
-            id="passwordLength"
-            class="slider"
-            min="1"
-            max="18"
-            value="14"
-          />
-        </div>
-        <div class="toggle-wrapper">
-          <label for="number">Include Numbers</label>
-          <input type="checkbox" id="number" class="cm-toggle" checked />
-        </div>
-        <div class="toggle-wrapper">
-          <label for="symbol">Include Symbols</label>
-          <input type="checkbox" id="symbol" class="cm-toggle" checked />
-        </div>
-      </div>
-
-      <button id="btn" onclick="generatePasswords()">
-        <p id="button-text">Generate passwords</p>
-      </button>
-      <hr />
-      <div class="passwords-container">
-        <div id="password1"></div>
-        <div id="password2"></div>
-        <div id="password3"></div>
-        <div id="password4"></div>
-      </div>
-    </div>
-
-    <script src="index.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
