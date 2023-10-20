@@ -2,7 +2,7 @@
 
 A solo Project for the purpose of demoing what I learned Scrimba's Front-End Development path.
 
-[Live Demo](https://timdehof.github.io/passwordGenerator/)
+[Live Demo](https://stellular-chaja-8fc7ce.netlify.app/)
 
 ## goals of this project
 
@@ -14,5 +14,5 @@ A solo Project for the purpose of demoing what I learned Scrimba's Front-End Dev
 ## Stretch goals
 
 - [x] Ability to change the length of the passwords
-- [ ] Add "copy to clipboard" button
+- [x] Add "copy to clipboard" button
 - [x] Toggle "symbols" and "numbers" on/off
