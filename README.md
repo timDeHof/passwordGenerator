@@ -1,4 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6565f4b4-8bc9-49a7-a02c-05481255eecf/deploy-status)](https://app.netlify.com/sites/stellular-chaja-8fc7ce/deploys)
 # Password Generator
+![Screenshot 2023-10-20 at 9 14 28 PM](https://github.com/timDeHof/passwordGenerator/assets/2568193/73abdd6a-6f79-4b22-8036-e1b390daaa59)
 
 ## Overview
 
