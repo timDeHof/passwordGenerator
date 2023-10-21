@@ -126,8 +126,6 @@ input[type="range"] {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 140% */
-
   margin: 0;
 }
 /* Toggle button */
@@ -188,19 +186,17 @@ input[type="range"] {
 }
 /* Button */
 #btn {
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 9px 17px 9px 15px;
   gap: 12px;
-
   width: 223px;
   height: 42px;
   left: 52px;
   background: var(--green);
-  /* shadow/sm */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 6px;
   margin-bottom: 20px;
